@@ -2,18 +2,22 @@ export default function NavBar() {
   return(
     <nav id="NavBar">
       <ul>
-        <li>
-          About me
-        </li>
-        <li>
-          Skills & Tools
-        </li>
-        <li>
-          My work
-        </li>
-        <li>
-          Contact me
-        </li>
+        <a href="#Intro">
+          <li className="about">
+          </li>
+        </a>
+        <a href="#Skills">
+          <li className="skill">
+          </li>
+        </a>
+        <a href="#Works">
+          <li className="work">
+          </li>
+        </a>
+        <a href="#Contact">
+          <li className="contact">
+          </li>
+        </a>
       </ul>
     </nav>
   );

@@ -8,6 +8,15 @@ ul {
   list-style: none;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
 .main {
   max-width: 1200px;
   margin: 0 auto;
@@ -20,7 +29,7 @@ ul {
 
 #NavBar {
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   padding: 1rem;
   background-color: rgba(120, 120, 120, 0.8);
@@ -33,12 +42,46 @@ ul {
   gap: 2rem;
 }
 
+#NavBar li.about::after {
+  content: "About me";
+}
+
+#NavBar li.skill::after {
+  content: "Skills & Tools";
+}
+
+#NavBar li.work::after {
+  content: "My work";
+}
+
+#NavBar li.contact::after {
+  content: "Contact me";
+}
+
+@media (max-width: 599px) {
+  #NavBar li.about::after {
+    content: "About";
+  }
+  
+  #NavBar li.skill::after {
+    content: "Skill";
+  }
+  
+  #NavBar li.work::after {
+    content: "Work";
+  }
+  
+  #NavBar li.contact::after {
+    content: "Contact";
+  }
+}
+
 #Intro {
   width: 80%;
   display: grid;
   grid-template-columns: auto auto;
   gap: 1rem;
-  padding: 2rem;
+  padding: 5rem 2rem 0;
   place-items: center;
 }
 
@@ -55,7 +98,7 @@ ul {
 @media (max-width: 599px) {
   #Intro {
     grid-template-columns: 1fr;
-    padding: 1rem;
+    padding: 5rem 1rem 0;
   }
   #Intro img {
     width: auto;
@@ -91,14 +134,14 @@ ul.panel {
   display: grid;
   grid-template-rows: auto auto;
   gap: 2rem;
-  padding: 2rem;
+  padding: 4rem 2rem 0;
   place-items: center;
 }
 
 @media (max-width: 599px) {
   #Skills {
     gap: 1rem;
-    padding: 1rem;
+    padding: 4rem 1rem 0;
   }
 }
 
@@ -125,14 +168,14 @@ ul.panel {
   display: grid;
   grid-template-rows: auto auto;
   gap: 2rem;
-  padding: 2rem;
+  padding: 4rem 2rem 2rem;
   place-items: center;
 }
 
 @media (max-width: 599px) {
   #Works {
     gap: 1rem;
-    padding: 1rem;
+    padding: 4rem 1rem 1rem;
   }
 }
 
@@ -195,7 +238,6 @@ ul.panel {
 @media (max-width: 599px) {
   #Contact {
     gap: 1rem;
-    padding: 1rem;
-    margin-top: 1rem;
+    padding: 2rem 1rem 2rem;
   }
 }
