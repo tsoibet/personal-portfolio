@@ -9,7 +9,7 @@ ul {
 }
 
 .main {
-  width: 80vw;
+  max-width: 1200px;
   margin: 0 auto;
   border-left: 1px solid lightgrey;
   border-right: 1px solid lightgrey;
@@ -39,6 +39,28 @@ ul {
   grid-template-columns: auto auto;
   gap: 1rem;
   padding: 2rem;
+  place-items: center;
+}
+
+@media (max-width: 999px) {
+  #Intro {
+    width: 90%;
+  }
+  #Intro img {
+    margin: 2rem 0;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 599px) {
+  #Intro {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  #Intro img {
+    width: auto;
+    margin: 0;
+  }
 }
 
 #about-me {
@@ -48,6 +70,13 @@ ul {
   gap: 1rem;
   padding: 2rem;
   border: 1px solid black;
+}
+
+@media (max-width: 999px) {
+  #about-me {
+    margin: 0;
+    height: 100%;
+  }
 }
 
 ul.panel {
@@ -64,6 +93,13 @@ ul.panel {
   gap: 2rem;
   padding: 2rem;
   place-items: center;
+}
+
+@media (max-width: 599px) {
+  #Skills {
+    gap: 1rem;
+    padding: 1rem;
+  }
 }
 
 #Skills ul {
@@ -93,23 +129,43 @@ ul.panel {
   place-items: center;
 }
 
+@media (max-width: 599px) {
+  #Works {
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
 .display-board {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 1rem;
   row-gap: 1.5rem;
+}
+
+@media (max-width: 999px) {
+  .display-board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 599px) {
+  .display-board {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project {
   height: 100%;
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr;
   background-color: lightgrey;
   border: 1px solid black;
 }
 
 .project img {
+  width: 100%;
   place-self: center;
 }
 
@@ -133,5 +189,13 @@ ul.panel {
   gap: 2rem;
   padding: 2rem;
   background-color: lightgrey;
+  margin-top: 2rem;
 }
 
+@media (max-width: 599px) {
+  #Contact {
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+}

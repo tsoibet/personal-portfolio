@@ -2,7 +2,10 @@ export default function Intro() {
 
   return(
     <div id="Intro">
-      <img src="https://placehold.co/300" alt="placeholder" />
+      <picture>
+        <source media="(max-width: 999px)" srcset="https://placehold.co/200" alt="placeholder" />
+        <img src="https://placehold.co/300" alt="placeholder" />
+      </picture>
       <div id="about-me">
         <h1>
           About me
