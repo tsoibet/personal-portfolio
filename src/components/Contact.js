@@ -1,3 +1,5 @@
+import { SiGithub, SiLinkedin, SiLeetcode } from "react-icons/si"
+
 export default function Contact() {
   return(
     <div id="Contact">
@@ -9,13 +11,13 @@ export default function Contact() {
         </p>
         <ul className="panel">
           <li>
-            Github
+            <SiLinkedin />
           </li>
           <li>
-            Linkedin
+            <SiGithub />
           </li>
           <li>
-            Leetcode
+            <SiLeetcode />
           </li>
         </ul>
     </div>

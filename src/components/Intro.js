@@ -1,3 +1,5 @@
+import { SiGithub, SiLinkedin, SiLeetcode } from "react-icons/si"
+
 export default function Intro() {
 
   return(
@@ -15,13 +17,13 @@ export default function Intro() {
         </p>
         <ul className="panel">
           <li>
-            Github
+            <SiLinkedin />
           </li>
           <li>
-            Linkedin
+            <SiGithub />
           </li>
           <li>
-            Leetcode
+            <SiLeetcode />
           </li>
         </ul>
       </div>

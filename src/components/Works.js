@@ -1,3 +1,6 @@
+import { SiGithub } from "react-icons/si"
+import { RxOpenInNewWindow } from "react-icons/rx"
+
 export default function Works() {
   return(
     <div id="Works">
@@ -24,10 +27,10 @@ function Project() {
           </h3>
           <ul className="panel">
             <li>
-              Codes
+              <SiGithub />
             </li>
             <li>
-              Demo
+              <RxOpenInNewWindow />
             </li>
           </ul>
         </div>
