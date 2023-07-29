@@ -219,7 +219,7 @@ svg {
 @media (max-width: 599px) {
   #Works {
     gap: 1rem;
-    padding: 4rem 1rem 1rem;
+    padding: 4rem 1.5rem 1rem;
   }
 }
 
@@ -281,19 +281,25 @@ svg {
 
 #Contact {
   width: 100%;
+  margin-top: 2rem;
+  display: grid;
+  place-items: center;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-font-color);
+}
+
+#Contact > div {
+  max-width: 1200px;
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 2rem;
   padding: 2rem;
-  background-color: var(--secondary-bg-color);
-  color: var(--secondary-font-color);
-  margin-top: 2rem 0;
 }
 
 @media (max-width: 599px) {
-  #Contact {
-    gap: 1rem;
-    padding: 2rem 1rem 2rem;
+  #Contact > div {
+    gap: 1.5rem;
+    padding: 2rem 1.5rem 2rem;
   }
 }
 
