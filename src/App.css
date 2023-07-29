@@ -74,38 +74,25 @@ h3 {
   font-family: 'Ubuntu', sans-serif;
 }
 
-#NavBar li.about::after {
-  content: "ABOUT ME";
+#NavBar li .desktop {
+  display: block;
 }
 
-#NavBar li.skill::after {
-  content: "SKILLS & TOOLS";
-}
-
-#NavBar li.work::after {
-  content: "MY WORK";
-}
-
-#NavBar li.contact::after {
-  content: "CONTACT ME";
+#NavBar li .mobile {
+  display: none;
 }
 
 @media (max-width: 599px) {
-  #NavBar li.about::after {
-    content: "ABOUT";
+  #NavBar li .desktop {
+    display: none;
   }
-  
-  #NavBar li.skill::after {
-    content: "SKILLS";
+  #NavBar li .mobile {
+    display: block;
   }
-  
-  #NavBar li.work::after {
-    content: "WORK";
-  }
-  
-  #NavBar li.contact::after {
-    content: "CONTACT";
-  }
+}
+
+#NavBar a:target {
+  background-color: red;
 }
 
 #Intro {
