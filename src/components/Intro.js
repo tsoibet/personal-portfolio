@@ -1,31 +1,27 @@
-import { SiGithub, SiLinkedin, SiLeetcode } from "react-icons/si"
+import { aboutMePhotoS_path, aboutMePhotoM_path, aboutMePhotoL_path, getAboutMeTextArray } from "../data";
+import Panel from "./Panel";
 
 export default function Intro() {
+
+  let textArray = getAboutMeTextArray();
 
   return(
     <div id="Intro">
       <picture>
-        <source media="(max-width: 999px)" srcset="https://placehold.co/200" alt="placeholder" />
-        <img src="https://placehold.co/300" alt="placeholder" />
+        <source media="(max-width: 599px)" srcset={aboutMePhotoS_path} alt="Tsoibet" />
+        <source media="(min-width: 600px) and (max-width: 999px)" srcset={aboutMePhotoM_path} alt="Tsoibet" />
+        <img src={aboutMePhotoL_path} alt="Tsoibet" />
       </picture>
       <div id="about-me">
         <h1>
           About me
         </h1>
-        <p>
-          Doggo ipsum yapper woofer very taste wow very hand that feed shibe heckin good boys and girls, clouds what a nice floof he made many woofs. Heckin good boys and girls pupper such treat porgo, ur givin me a spook.
-        </p>
-        <ul className="panel">
-          <li>
-            <SiLinkedin />
-          </li>
-          <li>
-            <SiGithub />
-          </li>
-          <li>
-            <SiLeetcode />
-          </li>
-        </ul>
+        {textArray.map((paragraph, index) => (
+          <p key={index}>
+            {paragraph}
+          </p>
+        ))}
+        <Panel />
       </div>
     </div>
   );

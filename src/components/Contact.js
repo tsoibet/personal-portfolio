@@ -1,28 +1,23 @@
-import { SiGithub, SiLinkedin, SiLeetcode } from "react-icons/si"
+import { getContactTextArray } from "../data";
+import Panel from "./Panel";
 
 export default function Contact() {
+
+  let textArray = getContactTextArray();
+
   return(
     <div id="Contact">
       <div>
-          <h1>
-            Contact me
-          </h1>
-          <p>
-            Doggo ipsum yapper woofer very taste wow very hand that feed shibe heckin good boys and girls, clouds what a nice floof he made many woofs. Heckin good boys and girls pupper such treat porgo, ur givin me a spook.
+        <h1>
+          Contact me
+        </h1>
+        {textArray.map((paragraph, index) => (
+          <p key={index}>
+            {paragraph}
           </p>
-          <ul className="panel">
-            <li>
-              <SiLinkedin />
-            </li>
-            <li>
-              <SiGithub />
-            </li>
-            <li>
-              <SiLeetcode />
-            </li>
-          </ul>
+        ))}
+        <Panel />
       </div>
     </div>
   );
 }
-
