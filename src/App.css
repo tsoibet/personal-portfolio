@@ -265,7 +265,7 @@ svg {
 .project {
   height: 100%;
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   background-color: var(--card-bg-color);
   background-color: var(--card-bg-color);
   color: var(--main-font-color);
@@ -305,6 +305,17 @@ svg {
 
 .project p {
   font-size: 0.9rem;
+}
+
+.project .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project .skills svg {
+  width: 1.4rem !important;
+  height: 1.4rem !important;
 }
 
 #Contact {

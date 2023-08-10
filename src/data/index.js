@@ -2,7 +2,7 @@ import aboutMePhotoS from "../data/about-s.png";
 import aboutMePhotoM from "../data/about-m.png";
 import aboutMePhotoL from "../data/about-l.png";
 
-import { PythonOriginalWordmark, JavascriptOriginal, CplusplusOriginal, TypescriptOriginal, PhpOriginal, Html5OriginalWordmark, Css3OriginalWordmark, ReactOriginal, FastapiOriginal, FirebasePlain, BootstrapPlain, MysqlOriginal, SqliteOriginal, GitOriginal, DockerOriginal, WebpackOriginal } from 'devicons-react';
+import { PythonOriginalWordmark, JavascriptOriginal, CplusplusOriginal, TypescriptOriginal, PhpOriginal, Html5OriginalWordmark, Css3OriginalWordmark, ReactOriginal, JestPlain, FastapiOriginal, FirebasePlain, BootstrapPlain, SassOriginal, MysqlOriginal, SqliteOriginal, GitOriginal, DockerOriginal, WebpackOriginal } from 'devicons-react';
 import { BsTools } from 'react-icons/bs';
 
 import screenshot_missing from "../data/sc-missing.jpg"
@@ -66,6 +66,21 @@ export function getSkills() {
       "icon": <PhpOriginal />
     },
     {
+      "name": "FastAPI",
+      "icon": <FastapiOriginal />
+    },
+    {
+      "name": "React",
+      "icon": <ReactOriginal />
+    }, {
+      "name": "Jest",
+      "icon": <JestPlain />
+    },
+    {
+      "name": "Firebase",
+      "icon": <FirebasePlain />
+    },
+    {
       "name": "HTML",
       "icon": <Html5OriginalWordmark />
     },
@@ -74,16 +89,8 @@ export function getSkills() {
       "icon": <Css3OriginalWordmark />
     },
     {
-      "name": "React",
-      "icon": <ReactOriginal />
-    },
-    {
-      "name": "FastAPI",
-      "icon": <FastapiOriginal />
-    },
-    {
-      "name": "Firebase",
-      "icon": <FirebasePlain />
+      "name": "Sass",
+      "icon": <SassOriginal />
     },
     {
       "name": "Ant Design",
@@ -124,73 +131,85 @@ export function getWorks() {
   let objArray = [
     {
       "name": "Where's Doggo",
-      "description": "A Where's Waldo game where player's score equals to the time the player takes to find all the targets on the picture. Players' scores are uploaded to database for being shown on the leaderboard.\n(React, Javascript, Firebase(firestore database, hosting), HTML, CSS)",
+      "description": "A Where's Waldo game where player's score equals to the time the player takes to find all the targets on the picture. Players' scores are uploaded to database for being shown on the leaderboard.",
+      "skills": [<ReactOriginal />, <JavascriptOriginal />, <FirebasePlain />, <Html5OriginalWordmark />, <Css3OriginalWordmark />],
       "screenshotPath": screenshot_wheresdoggo,
       "repoUrl": "https://github.com/tsoibet/odin-wheres-waldo",
       "demoUrl": "https://odin-where-s-waldo-9fa41.web.app/"
     }, {
       "name": "Shopping Cart",
-      "description": "A dummy online store for React Router practice purpose. Total amount is updated immediately once a new item is added to cart.\n(React, Javascript, HTML, CSS)",
+      "description": "A dummy online store for React Router practice purpose. Total amount is updated immediately once a new item is added to cart.",
+      "skills": [<ReactOriginal />, <JavascriptOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />],
       "screenshotPath": screenshot_shoppingcart,
       "repoUrl": "https://github.com/tsoibet/odin-shopping-cart",
       "demoUrl": "https://tsoibet.github.io/odin-shopping-cart/#/"
     }, {
       "name": "Memory Game",
-      "description": "A card game where player wins when every single card is clicked once and only once. After clicking on a card, player score are updated and the cards are shuffled.\n(React, Javascript, HTML, CSS)",
+      "description": "A card game where player wins when every single card is clicked once and only once. After clicking on a card, player score are updated and the cards are shuffled.",
+      "skills": [<ReactOriginal />, <JavascriptOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />],
       "screenshotPath": screenshot_memorygame,
       "repoUrl": "https://github.com/tsoibet/odin-memory-card",
       "demoUrl": "http://tsoibet.github.io/odin-memory-card/"
     }, {
       "name": "Battleship",
-      "description": "A game where player competes with computer by attacking opponent's ships. The one who first sinks all the opponent's ships wins.\n(TDD Jest, Javascript, Drag and Drop API, HTML, CSS, Webpack)",
+      "description": "A game where player competes with computer by attacking opponent's ships. The one who first sinks all the opponent's ships wins. Drag and Drop API is used to allow users dragging ship to designated position.",
+      "skills": [<JavascriptOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />, <WebpackOriginal />, <JestPlain />],
       "screenshotPath": screenshot_battleship,
       "repoUrl": "https://github.com/tsoibet/odin-battleship",
       "demoUrl": "https://tsoibet.github.io/odin-battleship/"
     }, {
       "name": "Weather App",
-      "description": "A single page web app which allows user to check current weather and weather forecast of the designated city.\n(Javascript, Fetch API, HTML, CSS, Webpack)",
+      "description": "A single page web app which allows user to check current weather and weather forecast of the designated city. Fetch API is used to retrieve weather information from openweathermap.org.",
+      "skills": [<JavascriptOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />, <WebpackOriginal />],
       "screenshotPath": screenshot_weatherapp,
       "repoUrl": "https://github.com/tsoibet/odin-weather-app",
       "demoUrl": "https://tsoibet.github.io/odin-weather-app/"
     }, {
       "name": "Todo List",
-      "description": "A single page web app which allows user to create, edit and delete to-do items and projects.\n(Javascript, Web Storage API, HTML, CSS, Webpack)",
+      "description": "A single page web app which allows user to create, edit and delete to-do items and projects. Web Storage API is used to store todos in user's browser.",
+      "skills": [<JavascriptOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />, <WebpackOriginal />],
       "screenshotPath": screenshot_todolist,
       "repoUrl": "https://github.com/tsoibet/odin-todo-list",
       "demoUrl": "https://tsoibet.github.io/odin-todo-list/"
     }, {
       "name": "Admin Dashboard",
-      "description": "A dummy admin dashboard web page for CSS practice purpose.\n(HTML, CSS)",
+      "description": "A dummy admin dashboard web page for CSS practice purpose.",
+      "skills": [<Html5OriginalWordmark />, <Css3OriginalWordmark />],
       "screenshotPath": screenshot_dashboard,
       "repoUrl": "https://github.com/tsoibet/odin-admin-dashboard",
       "demoUrl": "https://tsoibet.github.io/odin-admin-dashboard/"
     }, {
       "name": "Simple Mercari",
-      "description": "A single page web application which shows items from database and allows users to upload items into database. (Python, FastAPI, Typescript, React, SQLite)",
+      "description": "A single page web application which shows items from database and allows users to upload items into database.",
+      "skills": [<PythonOriginalWordmark />, <FastapiOriginal />, <TypescriptOriginal />, <ReactOriginal />, <SqliteOriginal />, <Css3OriginalWordmark />],
       "screenshotPath": screenshot_simplemercari,
       "repoUrl": "https://github.com/tsoibet/mercari-build-training-2022",
       "demoUrl": ""
     }, {
       "name": "New Mercari for Hackathon",
-      "description": "A new version of Simple Mercari with new lising features including video upload and image background change. This is a team project.\n(Python, FastAPI, Typescript, React, SQLite)",
+      "description": "A new version of Simple Mercari with new lising features including video upload and image background change. This is a team project of three.",
+      "skills": [<PythonOriginalWordmark />, <FastapiOriginal />, <TypescriptOriginal />, <ReactOriginal />, <SqliteOriginal />, <Css3OriginalWordmark />, <SassOriginal />],
       "screenshotPath": screenshot_hackathonmercari,
       "repoUrl": "https://github.com/tsoibet/mercari-build-hackathon-team14",
       "demoUrl": ""
     }, {
       "name": "Simple Calculator",
-      "description": "A simple calculator which can perform four basic math operations - addition, subtraction, multiplication and division.\n(Javascript, HTML, CSS)",
+      "description": "A simple calculator which can perform four basic math operations - addition, subtraction, multiplication and division.",
+      "skills": [<JavascriptOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />],
       "screenshotPath": screenshot_calculator,
       "repoUrl": "https://github.com/tsoibet/odin-calculator",
       "demoUrl": "https://tsoibet.github.io/odin-calculator/"
     }, {
       "name": "Retreive, Process and Visualize Data",
-      "description": "A program which retreives data from internet, cleans and stores data into database, and displays organized data on a webpage.\n(Python, SQLite)",
+      "description": "A program which retreives data from internet, cleans and stores data into database, and displays organized data on a webpage.",
+      "skills": [<PythonOriginalWordmark />, <SqliteOriginal />],
       "screenshotPath": screenshot_missing,
       "repoUrl": "https://github.com/tsoibet/Retreive-Process-and-Visualize-Data-with-Python",
       "demoUrl": ""
     }, {
       "name": "Task Management Site",
-      "description": "A website which shows tasks and allows users to add, edit, delete and sort tasks.\n(PHP, MySQL, HTML, Bootstrap)",
+      "description": "A website which shows tasks and allows users to add, edit, delete and sort tasks.",
+      "skills": [<PhpOriginal />, <MysqlOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />, <BootstrapPlain />],
       "screenshotPath": screenshot_taskmanagement,
       "repoUrl": "https://github.com/tsoibet/task-management-site",
       "demoUrl": ""

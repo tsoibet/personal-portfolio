@@ -13,14 +13,14 @@ export default function Works() {
       </h1>
       <div className="display-board">
         {workArray.map((work, index) => (
-          <Project key={index} name={work.name} description={work.description} screenshot={work.screenshotPath} repoUrl={work.repoUrl} demoUrl={work.demoUrl} />
+          <Project key={index} name={work.name} description={work.description} skills={work.skills} screenshot={work.screenshotPath} repoUrl={work.repoUrl} demoUrl={work.demoUrl} />
         ))}
       </div>
     </div>
   );
 }
 
-function Project({name, description, screenshot, repoUrl, demoUrl }) {
+function Project({name, description, skills, screenshot, repoUrl, demoUrl }) {
 
   return(
     <div className="project">
@@ -50,6 +50,9 @@ function Project({name, description, screenshot, repoUrl, demoUrl }) {
         <p>
           {description}
         </p>
+        <div className="skills">
+          {skills.map((skill) => (skill))}
+        </div>
       </div>
     </div>
   );
