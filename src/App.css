@@ -121,6 +121,10 @@ h3 {
   text-decoration-color: var(--navbar-font-color);
 }
 
+#NavBar li.active > a:hover {
+  text-decoration-color: var(--accent-color2);
+}
+
 #Intro {
   width: 80%;
   display: grid;

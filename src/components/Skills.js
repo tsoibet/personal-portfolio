@@ -11,7 +11,7 @@ export default function Skills() {
       </h1>
       <ul>
         {objArray.map((skill, index) => (
-          <li>
+          <li key={index}>
             {skill.icon}
             <p>
               {skill.name}

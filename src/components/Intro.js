@@ -8,8 +8,8 @@ export default function Intro() {
   return(
     <div id="Intro">
       <picture>
-        <source media="(max-width: 599px)" srcset={aboutMePhotoS_path} alt="Tsoibet" />
-        <source media="(min-width: 600px) and (max-width: 999px)" srcset={aboutMePhotoM_path} alt="Tsoibet" />
+        <source media="(max-width: 599px)" srcSet={aboutMePhotoS_path} alt="Tsoibet" />
+        <source media="(min-width: 600px) and (max-width: 999px)" srcSet={aboutMePhotoM_path} alt="Tsoibet" />
         <img src={aboutMePhotoL_path} alt="Tsoibet" />
       </picture>
       <div id="about-me">
