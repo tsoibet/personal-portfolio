@@ -16,11 +16,13 @@ export default function Intro() {
         <h1>
           About me
         </h1>
-        {textArray.map((paragraph, index) => (
-          <p key={index}>
-            {paragraph}
-          </p>
-        ))}
+        <div>
+          {textArray.map((paragraph, index) => (
+            <p key={index}>
+              {paragraph}
+            </p>
+          ))}
+        </div>
         <Panel />
       </div>
     </div>

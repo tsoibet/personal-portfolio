@@ -175,8 +175,13 @@ h3 {
   #about-me {
     margin: 0;
     padding: 2rem 2rem 1.5rem;
-    height: 100%;
   }
+}
+
+#about-me > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 ul.panel {
