@@ -2,10 +2,11 @@ import aboutMePhotoS from "../data/about-s.png";
 import aboutMePhotoM from "../data/about-m.png";
 import aboutMePhotoL from "../data/about-l.png";
 
-import { PythonOriginalWordmark, JavascriptOriginal, CplusplusOriginal, TypescriptOriginal, PhpOriginal, Html5OriginalWordmark, Css3OriginalWordmark, ReactOriginal, JestPlain, FastapiOriginal, FirebasePlain, BootstrapPlain, SassOriginal, MysqlOriginal, SqliteOriginal, GitOriginal, DockerOriginal, WebpackOriginal } from 'devicons-react';
+import { PythonOriginal, JavascriptOriginal, CplusplusOriginal, TypescriptOriginal, PhpOriginal, Html5OriginalWordmark, Css3OriginalWordmark, ReactOriginal, JestPlain, FastapiOriginal, FirebasePlain, BootstrapPlain, AntdesignOriginal, SassOriginal, MysqlOriginal, SqliteOriginal, MongodbOriginal, GitOriginal, DockerOriginal, WebpackOriginal, NodejsOriginal, NextjsOriginal, VercelOriginal } from 'devicons-react';
 import { BsTools } from 'react-icons/bs';
 
 import screenshot_missing from "../data/sc-missing.jpg"
+import screenshot_minimessageboard from "../data/sc-minimessageboard.jpg"
 import screenshot_wheresdoggo from "../data/sc-wheresdoggo.jpg"
 import screenshot_shoppingcart from "../data/sc-shoppingcart.jpg"
 import screenshot_memorygame from "../data/sc-memorygame.jpg"
@@ -47,7 +48,7 @@ export function getSkills() {
   return ([
     {
       "name": "Python",
-      "icon": <PythonOriginalWordmark />
+      "icon": <PythonOriginal />
     }, 
     {
       "name": "Javascript",
@@ -70,15 +71,19 @@ export function getSkills() {
       "icon": <FastapiOriginal />
     },
     {
+      "name": "Next.js",
+      "icon": <NextjsOriginal />
+    }, 
+    {
+      "name": "Node.js",
+      "icon": <NodejsOriginal />
+    }, 
+    {
       "name": "React",
       "icon": <ReactOriginal />
     }, {
       "name": "Jest",
       "icon": <JestPlain />
-    },
-    {
-      "name": "Firebase",
-      "icon": <FirebasePlain />
     },
     {
       "name": "HTML",
@@ -94,11 +99,15 @@ export function getSkills() {
     },
     {
       "name": "Ant Design",
-      "icon": <BsTools className="dummy" />
+      "icon": <AntdesignOriginal />
     },
     {
       "name": "Bootstrap",
       "icon": <BootstrapPlain />
+    },
+    {
+      "name": "MongoDB",
+      "icon": <MongodbOriginal />
     },
     {
       "name": "MySQL",
@@ -107,6 +116,14 @@ export function getSkills() {
     {
       "name": "SQlite",
       "icon": <SqliteOriginal />
+    },
+    {
+      "name": "Vercel",
+      "icon": <VercelOriginal />
+    },
+    {
+      "name": "Firebase",
+      "icon": <FirebasePlain />
     },
     {
       "name": "Git",
@@ -130,9 +147,16 @@ export function getSkills() {
 export function getWorks() {
   let objArray = [
     {
+      "name": "Mini Message Board",
+      "description": "A simple message board where users can leave short messages. Data are stored in MongoDB Atlas. This is a full stack project.",
+      "skills": [<NextjsOriginal />, <NodejsOriginal />, <MongodbOriginal />,  <ReactOriginal />, <TypescriptOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />, <VercelOriginal />, ],
+      "screenshotPath": screenshot_minimessageboard,
+      "repoUrl": "https://github.com/tsoibet/mini-message-board/",
+      "demoUrl": "https://tsoibet-s-mini-message-board.vercel.app/"
+    }, {
       "name": "Where's Doggo",
       "description": "A Where's Waldo game where player's score equals to the time the player takes to find all the targets on the picture. Players' scores are uploaded to database for being shown on the leaderboard.",
-      "skills": [<ReactOriginal />, <JavascriptOriginal />, <FirebasePlain />, <Html5OriginalWordmark />, <Css3OriginalWordmark />],
+      "skills": [<ReactOriginal />, <JavascriptOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />, <FirebasePlain />],
       "screenshotPath": screenshot_wheresdoggo,
       "repoUrl": "https://github.com/tsoibet/odin-wheres-waldo",
       "demoUrl": "https://odin-where-s-waldo-9fa41.web.app/"
@@ -181,14 +205,14 @@ export function getWorks() {
     }, {
       "name": "Simple Mercari",
       "description": "A single page web application which shows items from database and allows users to upload items into database.",
-      "skills": [<PythonOriginalWordmark />, <FastapiOriginal />, <TypescriptOriginal />, <ReactOriginal />, <SqliteOriginal />, <Css3OriginalWordmark />],
+      "skills": [<PythonOriginal />, <FastapiOriginal />, <TypescriptOriginal />, <ReactOriginal />, <SqliteOriginal />, <Css3OriginalWordmark />],
       "screenshotPath": screenshot_simplemercari,
       "repoUrl": "https://github.com/tsoibet/mercari-build-training-2022",
       "demoUrl": ""
     }, {
       "name": "New Mercari for Hackathon",
       "description": "A new version of Simple Mercari with new lising features including video upload and image background change. This is a team project of three.",
-      "skills": [<PythonOriginalWordmark />, <FastapiOriginal />, <TypescriptOriginal />, <ReactOriginal />, <SqliteOriginal />, <Css3OriginalWordmark />, <SassOriginal />],
+      "skills": [<PythonOriginal />, <FastapiOriginal />, <TypescriptOriginal />, <ReactOriginal />, <SqliteOriginal />, <Css3OriginalWordmark />, <SassOriginal />, <AntdesignOriginal />],
       "screenshotPath": screenshot_hackathonmercari,
       "repoUrl": "https://github.com/tsoibet/mercari-build-hackathon-team14",
       "demoUrl": ""
@@ -202,7 +226,7 @@ export function getWorks() {
     }, {
       "name": "Retreive, Process and Visualize Data",
       "description": "A program which retreives data from internet, cleans and stores data into database, and displays organized data on a webpage.",
-      "skills": [<PythonOriginalWordmark />, <SqliteOriginal />],
+      "skills": [<PythonOriginal />, <SqliteOriginal />],
       "screenshotPath": screenshot_missing,
       "repoUrl": "https://github.com/tsoibet/Retreive-Process-and-Visualize-Data-with-Python",
       "demoUrl": ""
