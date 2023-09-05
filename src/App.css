@@ -34,6 +34,7 @@ ul {
 a {
   text-decoration: none;
   color: var(--main-font-color);
+  transition: color 0.2s ease 0.1s;
 }
 
 a:visited {
@@ -105,7 +106,6 @@ h3 {
 
 #NavBar a {
   color: var(--navbar-font-color);
-  text-decoration: underline rgba(255, 255, 255, 0);
   transition: all 0.3s ease 0.1s;
 }
 
@@ -114,15 +114,15 @@ h3 {
 }
 
 #NavBar a:hover {
-  color: var(--accent-color2);
+  color: var(--accent-color);
 }
 
 #NavBar li.active > a {
-  text-decoration-color: var(--navbar-font-color);
+  color: var(--accent-color2);
 }
 
 #NavBar li.active > a:hover {
-  text-decoration-color: var(--accent-color2);
+  color: var(--accent-color);
 }
 
 #Intro {
