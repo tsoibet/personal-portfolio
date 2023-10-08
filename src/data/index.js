@@ -25,9 +25,7 @@ export let aboutMePhotoL_path = aboutMePhotoL;
 
 export function getAboutMeTextArray() {
 
-  let textArray = [`Hello! I'm Tsoibet, a self-taught software developer. A capstone course in Python sparked my interest in coding, and The Odin Project further enriched my skills in web development technologies like HTML, CSS, JavaScript, and Node.js.`];
-
-  textArray.push(`As a software developer, I aim to create impactful applications that solve real-world problems with my technical expertise.`);
+  let textArray = [`Hello! I'm Tsoibet, a self-taught software developer. `];
 
   textArray.push(`Now, I'm actively seeking a software developer position to contribute my skills and make a positive impact.`);
 
@@ -211,7 +209,7 @@ export function getWorks() {
       "demoUrl": ""
     }, {
       "name": "New Mercari for Hackathon",
-      "description": "A new version of Simple Mercari with new lising features including video upload and image background change. This is a team project of three.",
+      "description": "A new version of Simple Mercari with new lising features including video upload and image background change. This is a team project of four.",
       "skills": [<PythonOriginal />, <FastapiOriginal />, <TypescriptOriginal />, <ReactOriginal />, <SqliteOriginal />, <Css3OriginalWordmark />, <SassOriginal />, <AntdesignOriginal />],
       "screenshotPath": screenshot_hackathonmercari,
       "repoUrl": "https://github.com/tsoibet/mercari-build-hackathon-team14",
@@ -243,7 +241,7 @@ export function getWorks() {
 }
 
 export function getContactTextArray() {
-  let textArray = ["I'm actively seeking new opportunities in software development. If you're interested in discussing potential roles or projects, please don't hesitate to contact me on Linkedin."];
+  let textArray = ["I'm actively seeking new opportunities in software development. If you're interested in discussing potential roles, please don't hesitate to contact me on Linkedin."];
 
   return textArray;
 }
