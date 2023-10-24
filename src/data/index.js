@@ -2,10 +2,11 @@ import aboutMePhotoS from "../data/about-s.png";
 import aboutMePhotoM from "../data/about-m.png";
 import aboutMePhotoL from "../data/about-l.png";
 
-import { PythonOriginal, JavascriptOriginal, CplusplusOriginal, TypescriptOriginal, PhpOriginal, Html5OriginalWordmark, Css3OriginalWordmark, ReactOriginal, JestPlain, FastapiOriginal, FirebasePlain, BootstrapPlain, AntdesignOriginal, SassOriginal, MysqlOriginal, SqliteOriginal, MongodbOriginal, GitOriginal, DockerOriginal, WebpackOriginal, NodejsOriginal, NextjsOriginal, VercelOriginal } from 'devicons-react';
+import { PythonOriginal, JavascriptOriginal, CplusplusOriginal, TypescriptOriginal, PhpOriginal, Html5OriginalWordmark, Css3OriginalWordmark, ReactOriginal, JestPlain, FastapiOriginal, FirebasePlain, TailwindcssOriginal, BootstrapPlain, AntdesignOriginal, SassOriginal, MysqlOriginal, SqliteOriginal, MongodbOriginal, GitOriginal, DockerOriginal, WebpackOriginal, NodejsOriginal, NextjsOriginal, VercelOriginal } from 'devicons-react';
 import { BsTools } from 'react-icons/bs';
 
 import screenshot_missing from "../data/sc-missing.jpg"
+import screenshot_kaado from "../data/sc-kaado.jpg"
 import screenshot_minimessageboard from "../data/sc-minimessageboard.jpg"
 import screenshot_wheresdoggo from "../data/sc-wheresdoggo.jpg"
 import screenshot_shoppingcart from "../data/sc-shoppingcart.jpg"
@@ -145,9 +146,17 @@ export function getSkills() {
 export function getWorks() {
   let objArray = [
     {
+      "name": "Kaado",
+      "description": "A web card holder where users can keep their paper member cards. Say goodbye to thick wallet. This project is built with the latest technology, Next.js 13. Data are stored in MongoDB Atlas. ",
+      "skills": [<NextjsOriginal />, <NodejsOriginal />, <ReactOriginal />, <TypescriptOriginal />, <MongodbOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />, <TailwindcssOriginal />, <VercelOriginal />, ],
+      "screenshotPath": screenshot_kaado,
+      "repoUrl": "https://github.com/tsoibet/kaado",
+      "demoUrl": "https://kaado.vercel.app/"
+    },
+    {
       "name": "Mini Message Board",
       "description": "A simple message board where users can leave short messages. Data are stored in MongoDB Atlas. This is a full stack project.",
-      "skills": [<NextjsOriginal />, <NodejsOriginal />, <MongodbOriginal />,  <ReactOriginal />, <TypescriptOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />, <VercelOriginal />, ],
+      "skills": [<NextjsOriginal />, <NodejsOriginal />, <ReactOriginal />, <TypescriptOriginal />, <MongodbOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />, <VercelOriginal />, ],
       "screenshotPath": screenshot_minimessageboard,
       "repoUrl": "https://github.com/tsoibet/mini-message-board/",
       "demoUrl": "https://tsoibet-s-mini-message-board.vercel.app/"
