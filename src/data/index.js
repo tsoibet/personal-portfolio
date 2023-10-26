@@ -2,7 +2,7 @@ import aboutMePhotoS from "../data/about-s.png";
 import aboutMePhotoM from "../data/about-m.png";
 import aboutMePhotoL from "../data/about-l.png";
 
-import { PythonOriginal, JavascriptOriginal, CplusplusOriginal, TypescriptOriginal, PhpOriginal, Html5OriginalWordmark, Css3OriginalWordmark, ReactOriginal, JestPlain, FastapiOriginal, FirebasePlain, TailwindcssOriginal, BootstrapPlain, AntdesignOriginal, SassOriginal, MysqlOriginal, SqliteOriginal, MongodbOriginal, GitOriginal, DockerOriginal, WebpackOriginal, NodejsOriginal, NextjsOriginal, VercelOriginal } from 'devicons-react';
+import { PythonOriginal, JavascriptOriginal, CplusplusOriginal, TypescriptOriginal, PhpOriginal, Html5OriginalWordmark, Css3OriginalWordmark, ReactOriginal, JestPlain, FastapiOriginal, FirebasePlain, TailwindcssOriginal, BootstrapPlain, AntdesignOriginal, SassOriginal, MysqlOriginal, SqliteOriginal, MongodbOriginal, MongooseOriginal, GitOriginal, DockerOriginal, WebpackOriginal, NodejsOriginal, NextjsOriginal, VercelOriginal } from 'devicons-react';
 import { BsTools } from 'react-icons/bs';
 
 import screenshot_missing from "../data/sc-missing.jpg"
@@ -26,9 +26,11 @@ export let aboutMePhotoL_path = aboutMePhotoL;
 
 export function getAboutMeTextArray() {
 
-  let textArray = [`Hello! I'm Tsoibet, a self-taught software developer. `];
+  let textArray = [`Hello! I'm Tsoi, a self-taught developer. I'm currently working as a freelance Japanese-English interpreter and wish to transition into a developer role. `];
 
-  textArray.push(`Now, I'm actively seeking a software developer position to contribute my skills and make a positive impact.`);
+  textArray.push(`With a strong interest in software development, I've completed a range of courses covering web development technologies, AI programming and algorithms, equipping myself with the knowledge I would've learnt in a CS major.`);
+
+  textArray.push(`I am ready to contribute as a developer.`);
 
   return textArray;
 }
@@ -66,10 +68,6 @@ export function getSkills() {
       "icon": <PhpOriginal />
     },
     {
-      "name": "FastAPI",
-      "icon": <FastapiOriginal />
-    },
-    {
       "name": "Next.js",
       "icon": <NextjsOriginal />
     }, 
@@ -93,16 +91,8 @@ export function getSkills() {
       "icon": <Css3OriginalWordmark />
     },
     {
-      "name": "Sass",
-      "icon": <SassOriginal />
-    },
-    {
-      "name": "Ant Design",
-      "icon": <AntdesignOriginal />
-    },
-    {
-      "name": "Bootstrap",
-      "icon": <BootstrapPlain />
+      "name": "TailwindCSS",
+      "icon": <TailwindcssOriginal />
     },
     {
       "name": "MongoDB",
@@ -133,10 +123,6 @@ export function getSkills() {
       "icon": <DockerOriginal />
     },
     {
-      "name": "Docker Compose",
-      "icon": <BsTools className="dummy" />
-    },
-    {
       "name": "Webpack",
       "icon": <WebpackOriginal />
     }
@@ -147,8 +133,8 @@ export function getWorks() {
   let objArray = [
     {
       "name": "Kaado",
-      "description": "A web card holder where users can keep their paper member cards. Say goodbye to thick wallet. This project is built with the latest technology, Next.js 13. Data are stored in MongoDB Atlas. ",
-      "skills": [<NextjsOriginal />, <NodejsOriginal />, <ReactOriginal />, <TypescriptOriginal />, <MongodbOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />, <TailwindcssOriginal />, <VercelOriginal />, ],
+      "description": "A web-based card holder where users can keep their paper member cards. This project is built with the latest technology, Next.js 13. Data are stored in MongoDB Atlas. ",
+      "skills": [<NextjsOriginal />, <ReactOriginal />, <TypescriptOriginal />, <MongodbOriginal />, <MongooseOriginal />, <Html5OriginalWordmark />, <Css3OriginalWordmark />, <TailwindcssOriginal />, <VercelOriginal />, ],
       "screenshotPath": screenshot_kaado,
       "repoUrl": "https://github.com/tsoibet/kaado",
       "demoUrl": "https://kaado.vercel.app/"
@@ -212,14 +198,14 @@ export function getWorks() {
     }, {
       "name": "Simple Mercari",
       "description": "A single page web application which shows items from database and allows users to upload items into database.",
-      "skills": [<PythonOriginal />, <FastapiOriginal />, <TypescriptOriginal />, <ReactOriginal />, <SqliteOriginal />, <Css3OriginalWordmark />],
+      "skills": [<PythonOriginal />, <FastapiOriginal />, <TypescriptOriginal />, <ReactOriginal />, <SqliteOriginal />],
       "screenshotPath": screenshot_simplemercari,
       "repoUrl": "https://github.com/tsoibet/mercari-build-training-2022",
       "demoUrl": ""
     }, {
       "name": "New Mercari for Hackathon",
       "description": "A new version of Simple Mercari with new lising features including video upload and image background change. This is a team project of four.",
-      "skills": [<PythonOriginal />, <FastapiOriginal />, <TypescriptOriginal />, <ReactOriginal />, <SqliteOriginal />, <Css3OriginalWordmark />, <SassOriginal />, <AntdesignOriginal />],
+      "skills": [<PythonOriginal />, <FastapiOriginal />, <TypescriptOriginal />, <ReactOriginal />, <SqliteOriginal />, <SassOriginal />, <AntdesignOriginal />],
       "screenshotPath": screenshot_hackathonmercari,
       "repoUrl": "https://github.com/tsoibet/mercari-build-hackathon-team14",
       "demoUrl": ""
